@@ -39,17 +39,17 @@ const commands = {
 
 		if (mode === "enable") {
 			enable();
-			console.log(`Enabled kill farming. Current teleportation method is /${tpmethod}`)
+			console.log(`[94m[Kill Farm][0m Enabled kill farming. Current teleportation method is /${tpmethod}`)
 		} else if (mode === "disable") {
 			disable();
-			console.log("Disabled kill farming.")
+			console.log("[94m[Kill Farm][0m Disabled kill farming.")
 		} else if (mode === "method") {
-			console.log(`Current teleportation method is /${tpmethod}`)
+			console.log(`[94m[Kill Farm][0m Current teleportation method is /${tpmethod}`)
 		} else if (mode === "setmethod") {
 			tpmethod = args.join(" ");
-			console.log(`Set teleportation method to /${tpmethod}.`)
+			console.log(`[94m[Kill Farm][0m Set teleportation method to /${tpmethod}.`)
 		} else {
-			console.log("Unknown command! (valid: enable, disable, method, setmethod <method>)")
+			console.log("[94m[Kill Farm][0m Unknown command! (valid: enable, disable, method, setmethod <method>)")
 		}
 	}
 }
